@@ -1,6 +1,6 @@
 <template>
 	<div id="app">
-		<h1>Tarefas</h1>
+		<h1>Tasks</h1>
 		<TasksProgress :progress="progress" />
 		<NewTask @taskAdded="addTask" />
 		<TaskGrid :tasks="tasks" @taskStateChanged="toggleTaskState" @taskDeleted="deleteTask" />
