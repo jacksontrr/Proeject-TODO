@@ -65,7 +65,7 @@ export default {
 		const json = localStorage.getItem('tasks')
 		const arrayTasks = JSON.parse(json)
 		if (Array.isArray(arrayTasks)) {
-			this.tasks = JSON.parse(tasks) 
+			this.tasks = arrayTasks
 		}else{
 			this.tasks = []
 		}
